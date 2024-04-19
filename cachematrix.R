@@ -1,15 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-
-makeCacheMatrix <- function(x = matrix()) {
-
-}
-
-
-## Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+makeVector <- function(x = numeric()) {
+    vec <- x
+    set <- function(value) {
+        vec <<- value
+    }
+    get <- function() vec
+    mean <- function() mean(vec)
+    list(set = set, get = get, mean = mean)
 }
