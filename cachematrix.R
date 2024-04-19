@@ -7,3 +7,4 @@ makeVector <- function(x = numeric()) {
     mean <- function() mean(vec)
     list(set = set, get = get, mean = mean)
 }
+ 
